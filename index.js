@@ -5,7 +5,7 @@ var jwt = require('jsonwebtoken');
 const app = express()
 app.use(cors())
 app.use(express.json())
-const port = process.env.PORT || 300
+const port = process.env.PORT || 3000
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vdfwpbk.mongodb.net/?retryWrites=true&w=majority`
